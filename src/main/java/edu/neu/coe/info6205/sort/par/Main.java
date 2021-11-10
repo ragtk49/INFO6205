@@ -26,10 +26,10 @@ public class Main {
             System.out.println("-----------------------------------------------------------------");
             System.out.println("Degree of parallelism: " + ParSort.pool.getParallelism());
             Random random = new Random();
-            int[] array = new int[2000000];
+            int[] array = new int[1000000];
             System.out.println("Array Size: " + array.length);
             for (int j = 0; j < 10; j++) {
-                ParSort.cutoff =  100000 * (j + 1);
+                ParSort.cutoff =  50000 * (j + 1);
                 // ParSort.cutoff=
                 // for (int i = 0; i < array.length; i++) array[i] = random.nextInt(10000000);
                 long time;
